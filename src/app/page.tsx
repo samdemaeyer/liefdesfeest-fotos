@@ -5,10 +5,12 @@ import { useDropzone } from "react-dropzone";
 import Image from "next/image";
 import { UploadedFile } from "@/types";
 import { formatFileSize, validateImageFile } from "@/lib/utils";
+import PhotoGrid from "@/components/PhotoGrid";
 
 export default function HomePage() {
 	const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
 	const [isUploading, setIsUploading] = useState(false);
+	const [refreshGallery, setRefreshGallery] = useState(0);
 
 	const uploadFile = async (file: File) => {
 		try {
@@ -99,6 +101,8 @@ export default function HomePage() {
 
 		await Promise.all(uploadPromises);
 		setIsUploading(false);
+		// Refresh the gallery to show new uploads
+		setRefreshGallery((prev) => prev + 1);
 	}, []);
 
 	const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -291,6 +295,9 @@ export default function HomePage() {
 					</div>
 				)}
 			</div>
+
+			{/* Photo Gallery */}
+			<PhotoGrid refreshTrigger={refreshGallery} />
 		</div>
 	);
 }

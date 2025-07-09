@@ -35,3 +35,15 @@ export interface FileUploadProgress {
 	progress: number;
 	status: FileStatus;
 }
+
+export interface Photo {
+	key: string;
+	url: string;
+	size: number;
+	lastModified: Date;
+	filename: string;
+}
+
+export interface PhotosResponse {
+	photos: Photo[];
+}
