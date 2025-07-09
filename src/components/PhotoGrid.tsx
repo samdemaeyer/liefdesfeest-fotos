@@ -144,7 +144,7 @@ export default function PhotoGrid({ refreshTrigger = 0 }: PhotoGridProps) {
 						/>
 
 						{/* Hover overlay */}
-						<div className="inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-200 flex items-center justify-center">
+						<div className="absolute bg-transparent inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-200 flex items-center justify-center">
 							<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
 								<svg
 									className="w-8 h-8 text-white"
