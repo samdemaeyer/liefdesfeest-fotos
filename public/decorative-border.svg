@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .border-stroke { fill: none; stroke: #841811; stroke-width: 3; }
+      .border-fill { fill: #841811; }
+    </style>
+  </defs>
+
+  <!-- Decorative wavy line -->
+  <path class="border-stroke" d="M0 30 Q50 10 100 30 T200 30 T300 30 T400 30" />
+
+  <!-- Small hearts at intervals -->
+  <path class="border-fill"
+    d="M50 20c-3-3-9-6-9-12 0-3 2-5 5-5 2 0 3 1 4 3 1-2 2-3 4-3 3 0 5 2 5 5 0 6-6 9-9 12z" />
+  <path class="border-fill"
+    d="M150 40c-3-3-9-6-9-12 0-3 2-5 5-5 2 0 3 1 4 3 1-2 2-3 4-3 3 0 5 2 5 5 0 6-6 9-9 12z" />
+  <path class="border-fill"
+    d="M250 20c-3-3-9-6-9-12 0-3 2-5 5-5 2 0 3 1 4 3 1-2 2-3 4-3 3 0 5 2 5 5 0 6-6 9-9 12z" />
+  <path class="border-fill"
+    d="M350 40c-3-3-9-6-9-12 0-3 2-5 5-5 2 0 3 1 4 3 1-2 2-3 4-3 3 0 5 2 5 5 0 6-6 9-9 12z" />
+</svg>
