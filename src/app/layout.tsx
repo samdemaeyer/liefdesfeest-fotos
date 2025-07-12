@@ -17,6 +17,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Liefdesfeest - Ben & Dorina",
 	description: "Deel je mooie herinneringen van onze liefdesviering",
+	icons: {
+		icon: [{ url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }],
+		apple: [
+			{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+		],
+	},
+	manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
