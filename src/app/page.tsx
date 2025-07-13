@@ -7,6 +7,7 @@ import type { UploadedFile } from "@/types";
 import { formatFileSize, validateImageFile } from "@/lib/utils";
 import PhotoGrid from "@/components/PhotoGrid";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import WeddingHeader from "@/components/WeddingHeader";
 
 export default function HomePage() {
 	const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
@@ -128,65 +129,7 @@ export default function HomePage() {
 	return (
 		<div className="min-h-screen wedding-bg wedding-pattern">
 			{/* Wedding Header */}
-			<header className="text-center py-12 px-4">
-				<div className="max-w-4xl mx-auto">
-					{/* Decorative Hearts */}
-					<div className="flex justify-center items-center mb-8">
-						<div className="mr-4">
-							<Image
-								src="/hartjes2.png"
-								alt="Decorative hearts"
-								title="Decorative hearts"
-								width={60}
-								height={45}
-								className="opacity-60"
-							/>
-						</div>
-						<div className="ml-4">
-							<Image
-								src="/ringen.png"
-								alt="Wedding rings with diamonds"
-								title="Wedding rings with diamonds"
-								width={80}
-								height={48}
-								className="opacity-60"
-							/>
-						</div>
-					</div>
-
-					{/* Main Title */}
-					<h1 className="wedding-title text-6xl md:text-8xl font-bold mb-6 decorative-border">
-						Liefdesfeest
-					</h1>
-
-					{/* Date */}
-					<p className="wedding-text text-2xl md:text-3xl font-semibold mb-4 italic">
-						01.08.2025
-					</p>
-
-					{/* Names */}
-					<p className="wedding-text text-3xl md:text-4xl font-bold mb-8">
-						Ben & Dorina
-					</p>
-
-					{/* Decorative Border */}
-					<div className="flex justify-center mb-8">
-						<Image
-							src="/decorative-border.svg"
-							alt="Decorative border with hearts"
-							title="Decorative border with hearts"
-							width={400}
-							height={60}
-							className="opacity-70"
-						/>
-					</div>
-
-					{/* Subtitle */}
-					<p className="wedding-text text-xl md:text-2xl font-light max-w-2xl mx-auto">
-						Deel je mooie herinneringen van onze liefdesviering
-					</p>
-				</div>
-			</header>
+			<WeddingHeader subtitle="Deel je mooie herinneringen van onze liefdesviering" />
 
 			{/* Main Content */}
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
@@ -209,6 +152,7 @@ export default function HomePage() {
 								fill="none"
 								viewBox="0 0 48 48"
 							>
+								<title>Upload Icon</title>
 								<path
 									d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
 									strokeWidth={2}
@@ -248,6 +192,7 @@ export default function HomePage() {
 								fill="none"
 								viewBox="0 0 24 24"
 							>
+								<title>Animate spin</title>
 								<circle
 									className="opacity-25"
 									cx="12"
