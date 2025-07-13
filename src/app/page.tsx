@@ -6,11 +6,13 @@ import Image from "next/image";
 import type { UploadedFile } from "@/types";
 import { formatFileSize, validateImageFile } from "@/lib/utils";
 import PhotoGrid from "@/components/PhotoGrid";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function HomePage() {
 	const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
 	const [isUploading, setIsUploading] = useState(false);
 	const [refreshGallery, setRefreshGallery] = useState(0);
+	const isMobile = useIsMobile();
 
 	const uploadFile = useCallback(async (file: File) => {
 		try {
@@ -223,11 +225,15 @@ export default function HomePage() {
 									: "Deel je prachtige foto's met ons"}
 							</p>
 							<p className="text-base wedding-text opacity-70">
-								Sleep je foto&apos;s hierheen of klik om te selecteren
+								{isMobile
+									? "Klik om te selecteren"
+									: "Sleep je foto&apos;s hierheen of klik om te selecteren"}
 							</p>
-							<p className="text-sm wedding-text opacity-50 mt-2">
-								Ondersteunt: JPEG, PNG, GIF, WebP
-							</p>
+							{!isMobile && (
+								<p className="text-sm wedding-text opacity-50 mt-2">
+									Ondersteunt: JPEG, PNG, GIF, WebP
+								</p>
+							)}
 						</div>
 					</div>
 				</div>

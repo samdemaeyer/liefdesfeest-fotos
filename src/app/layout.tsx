@@ -34,10 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-					rel="stylesheet"
-				/>
+				<link href="https://use.typekit.net/xmb5fay.css" rel="stylesheet" />
 			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
