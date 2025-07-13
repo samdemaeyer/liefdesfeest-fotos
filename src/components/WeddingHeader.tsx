@@ -1,14 +1,10 @@
 import Image from "next/image";
 
 interface WeddingHeaderProps {
-	subtitle?: string;
 	children?: React.ReactNode;
 }
 
-export default function WeddingHeader({
-	subtitle,
-	children,
-}: WeddingHeaderProps) {
+export default function WeddingHeader({ children }: WeddingHeaderProps) {
 	return (
 		<header className="text-center py-12 px-4">
 			<div className="max-w-4xl mx-auto">
@@ -47,28 +43,9 @@ export default function WeddingHeader({
 				</p>
 
 				{/* Names */}
-				<p className="wedding-text text-3xl md:text-4xl font-bold mb-8">
+				<p className="wedding-text text-3xl md:text-4xl font-bold">
 					Ben & Dorina
 				</p>
-
-				{/* Decorative Border */}
-				<div className="flex justify-center mb-8">
-					<Image
-						src="/decorative-border.svg"
-						alt="Decorative border with hearts"
-						title="Decorative border with hearts"
-						width={400}
-						height={60}
-						className="opacity-70"
-					/>
-				</div>
-
-				{/* Optional Subtitle */}
-				{subtitle && (
-					<p className="wedding-text text-xl md:text-2xl font-light max-w-2xl mx-auto">
-						{subtitle}
-					</p>
-				)}
 
 				{/* Additional Content */}
 				{children}

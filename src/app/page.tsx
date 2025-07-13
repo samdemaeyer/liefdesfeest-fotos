@@ -129,7 +129,7 @@ export default function HomePage() {
 	return (
 		<div className="min-h-screen wedding-bg wedding-pattern">
 			{/* Wedding Header */}
-			<WeddingHeader subtitle="Deel je mooie herinneringen van onze liefdesviering" />
+			<WeddingHeader />
 
 			{/* Main Content */}
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
