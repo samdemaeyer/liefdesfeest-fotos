@@ -82,15 +82,12 @@ export default function OnsVerhaalPage() {
 
 			{/* Timeline Section */}
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-				<div className="relative">
-					{/* Vertical Line - Hidden on mobile, visible on desktop */}
-					<div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-[#841811]/30 h-full"></div>
-
-					{/* Mobile Timeline Line */}
-					<div className="lg:hidden absolute left-8 top-0 w-0.5 bg-[#841811]/30 h-full"></div>
+				<div className="relative pt-12 pb-12">
+					{/* Vertical Line - Centered for both mobile and desktop */}
+					<div className="absolute left-1/2 transform -translate-x-1/2 w-1 md:w-1 bg-[#841811]/30 h-full -top-6 -bottom-6"></div>
 
 					{/* Timeline Events */}
-					<div className="space-y-8 lg:space-y-16">
+					<div className="space-y-8 md:space-y-16">
 						{timelineEvents.map((event, index) => {
 							const isLeft = index % 2 === 0;
 
@@ -103,32 +100,32 @@ export default function OnsVerhaalPage() {
 									rootMargin="0px 0px -30px 0px"
 								>
 									{/* Mobile Layout */}
-									<div className="lg:hidden relative">
+									<div className="md:hidden relative">
 										{/* Mobile Timeline Dot */}
-										<div className="absolute left-6 top-6 w-4 h-4 bg-[#841811] rounded-full border-4 border-[#faf8f5] z-20"></div>
+										<div className="absolute left-1/2 transform -translate-x-1/2 -top-6 w-4 h-4 bg-[#841811] rounded-full border-4 border-[#faf8f5] z-30"></div>
 
 										{/* Mobile Card */}
-										<div className="ml-16 mr-2">
-											<div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg border-2 border-[#841811]/20">
+										<div className="relative z-20 mx-4 mt-6">
+											<div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border-2 border-[#841811]/20">
 												{/* Event Image */}
 												<div className="mb-4 relative h-40 rounded-lg overflow-hidden bg-[#841811]/10 flex items-center justify-center">
 													<div className="text-[#841811]/40 text-5xl">📷</div>
 												</div>
 
 												{/* Event Date */}
-												<div className="mb-3">
+												<div className="mb-3 text-center">
 													<span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
 														{event.date}
 													</span>
 												</div>
 
 												{/* Event Title */}
-												<h3 className="wedding-title text-lg font-bold mb-2">
+												<h3 className="wedding-title text-lg font-bold mb-2 text-center">
 													{event.title}
 												</h3>
 
 												{/* Event Description */}
-												<p className="wedding-text text-sm leading-relaxed opacity-80">
+												<p className="wedding-text text-sm leading-relaxed opacity-80 text-center">
 													{event.description}
 												</p>
 											</div>
@@ -136,7 +133,7 @@ export default function OnsVerhaalPage() {
 									</div>
 
 									{/* Desktop Layout */}
-									<div className="hidden lg:block">
+									<div className="hidden md:block">
 										<div
 											className={`relative flex items-center ${
 												isLeft ? "justify-start" : "justify-end"
@@ -216,11 +213,11 @@ export default function OnsVerhaalPage() {
 					duration={700}
 					threshold={0.2}
 				>
-					<div className="text-center mt-12 lg:mt-16">
-						<div className="inline-block text-5xl lg:text-6xl text-[#841811] opacity-60">
+					<div className="text-center mt-12 md:mt-16">
+						<div className="inline-block text-5xl md:text-6xl text-[#841811] opacity-60">
 							💕
 						</div>
-						<p className="wedding-text text-base lg:text-lg mt-3 lg:mt-4 italic px-4">
+						<p className="wedding-text text-base md:text-lg mt-3 md:mt-4 italic px-4">
 							En ze leefden nog lang en gelukkig...
 						</p>
 					</div>
