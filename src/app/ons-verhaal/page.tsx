@@ -27,12 +27,15 @@ export default function OnsVerhaalPage() {
     <div className="min-h-screen wedding-bg wedding-pattern">
       {/* Wedding Header */}
       <WeddingHeader>
-        <h2 className="wedding-text text-2xl md:text-3xl font-semibold decorative-border mt-8">
-          Ons Verhaal!
+        <h2 className="wedding-text  decorative-border mt-8 mb-8">
+          <span className="text-2xl md:text-3xl font-semibold">
+            Ons Verhaal!
+          </span>
         </h2>
-        <h2 className="wedding-text text-1xl md:text-2xl font-semibold decorative-border mt-8">
-          Vandaag zijn ze 10 jaar samen! Ze hebben al heel wat meegemaakt en vertellen hieronder hun verhaal.
-        </h2>
+        <p>
+          Vandaag zijn ze 10 jaar samen! <br />
+          Ze hebben al heel wat meegemaakt en vertellen hieronder hun verhaal.
+        </p>
       </WeddingHeader>
 
       {/* Timeline Section */}
