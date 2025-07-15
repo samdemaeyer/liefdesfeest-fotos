@@ -28,7 +28,10 @@ export default function OnsVerhaalPage() {
       {/* Wedding Header */}
       <WeddingHeader>
         <h2 className="wedding-text text-2xl md:text-3xl font-semibold decorative-border mt-8">
-          Ons Verhaal
+          Ons Verhaal!
+        </h2>
+        <h2 className="wedding-text text-1xl md:text-2xl font-semibold decorative-border mt-8">
+          Vandaag zijn ze 10 jaar samen! Ze hebben al heel wat meegemaakt en vertellen hieronder hun verhaal.
         </h2>
       </WeddingHeader>
 
