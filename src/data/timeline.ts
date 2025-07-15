@@ -1,8 +1,8 @@
 export interface TimelineEvent {
   id: number;
-  date: string;
+  date?: string;
   title: string;
-  description: string;
+  description?: string;
   image?: string;
 }
 
@@ -53,7 +53,6 @@ export const timelineData: YearSection[] = [
     events: [
       {
         id: 5,
-        date: '2016',
         title: 'Een “normale foto”',
         description:
           'Ben en Dorina hebben een “normale foto” gemaakt. Dit is een foto waar ze zelf niet eens in staan.',
@@ -93,7 +92,6 @@ export const timelineData: YearSection[] = [
       },
       {
         id: 10,
-        date: '2016',
         title: 'Via Snapchat leerden ze elkaar steeds beter kennen',
         description:
           'Via Snapchat leerden ze elkaar steeds beter kennen, daar horen natuurlijk ook filters bij.',
@@ -106,7 +104,6 @@ export const timelineData: YearSection[] = [
     events: [
       {
         id: 11,
-        date: '2017',
         title: 'Hun gezamenlijke liefde voor katten komt op',
         description:
           'Ben en Dorina hebben een gezamenlijke liefde voor katten gevonden. Ze hebben een prachtige tijd en hebben veel plezier.',
@@ -114,7 +111,6 @@ export const timelineData: YearSection[] = [
       },
       {
         id: 12,
-        date: '2017',
         title: 'Nieuwe traditie: jaarlijks de Paashaasparty onveilig maken',
         description:
           'Ben en Dorina hebben een nieuwe traditie opgezet: jaarlijks de Paashaasparty onveilig maken.',
@@ -122,7 +118,6 @@ export const timelineData: YearSection[] = [
       },
       {
         id: 13,
-        date: '2017',
         title: 'Echte koppels dragen Matching zonnebrillen',
         description:
           'Ben en Dorina dragen voor het eerst Matching zonnebrillen. Ze hebben een prachtige tijd en hebben veel plezier.',
@@ -130,7 +125,6 @@ export const timelineData: YearSection[] = [
       },
       {
         id: 14,
-        date: '2017',
         title: 'Opnieuw naar Londen en dit keer bezoeken ze ook Brighton',
         description:
           'Ben en Dorina gaan opnieuw naar Londen en dit keer bezoeken ze ook Brighton.',
@@ -151,7 +145,6 @@ export const timelineData: YearSection[] = [
     events: [
       {
         id: 16,
-        date: '2018',
         title: 'Matching zonnebrillen 2.0',
         description:
           'Ben en Dorina dragen voor het tweede jaar op een rij Matching zonnebrillen. Ze hebben een prachtige tijd en hebben veel plezier.',
@@ -426,21 +419,18 @@ export const timelineData: YearSection[] = [
     events: [
       {
         id: 45,
-        date: '2026??',
         title: 'Een huis kopen samen?',
         description:
           'Ben en Dorina kopen een huis samen. Een nieuwe start voor hun gezin.',
       },
       {
         id: 46,
-        date: '2026??',
         title: 'Een kind kopen?',
         description:
           'Ben en Dorina kopen een kind. Een nieuwe start voor hun gezin.',
       },
       {
         id: 47,
-        date: '2026??',
         title: 'Een 6de kat nemen?',
         description:
           'Ben en Dorina nemen een 6de kat in het gezin. Een nieuwe start voor hun gezin.',

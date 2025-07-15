@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import Image from 'next/image';
+import { useEffect } from 'react';
 import type { TimelineEvent } from '@/data/timeline';
 
 interface TimelineLightboxProps {
@@ -89,11 +89,13 @@ export default function TimelineLightbox({
         {/* Content Section - Bottom positioned */}
         <div className="flex-shrink-0 p-6 lg:p-8 text-center bg-white/90 backdrop-blur-sm">
           {/* Date */}
-          <div className="mb-4">
-            <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-medium">
-              {event.date}
-            </span>
-          </div>
+          {event.date && (
+            <div className="mb-4">
+              <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-medium">
+                {event.date}
+              </span>
+            </div>
+          )}
 
           {/* Title */}
           <h2 className="wedding-title text-2xl lg:text-3xl font-bold text-[#841811] mb-4">

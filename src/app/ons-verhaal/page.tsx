@@ -85,13 +85,13 @@ export default function OnsVerhaalPage() {
 
                           {/* Mobile Card */}
                           <div className="relative z-20 mx-4 mt-6">
-                            <button
-                              type="button"
-                              onClick={() => openLightbox(event)}
-                              className="w-full bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border-2 border-[#841811]/20 hover:border-[#841811]/40 transition-all duration-300 cursor-pointer hover:shadow-xl"
-                            >
-                              {/* Event Image */}
-                              {event.image && (
+                            {event.image ? (
+                              <button
+                                type="button"
+                                onClick={() => openLightbox(event)}
+                                className="w-full bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border-2 border-[#841811]/20 hover:border-[#841811]/40 transition-all duration-300 cursor-pointer hover:shadow-xl"
+                              >
+                                {/* Event Image */}
                                 <div className="mb-4 relative h-40 rounded-lg overflow-hidden bg-[#841811]/10">
                                   <Image
                                     src={event.image}
@@ -101,27 +101,48 @@ export default function OnsVerhaalPage() {
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                   />
                                 </div>
-                              )}
 
-                              {/* Event Date */}
-                              {event.date && (
-                                <div className="mb-3 text-center">
-                                  <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
-                                    {event.date}
-                                  </span>
-                                </div>
-                              )}
+                                {/* Event Date */}
+                                {event.date && (
+                                  <div className="mb-3 text-center">
+                                    <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
+                                      {event.date}
+                                    </span>
+                                  </div>
+                                )}
 
-                              {/* Event Title */}
-                              <h3 className="wedding-title text-lg font-bold mb-2 text-center">
-                                {event.title}
-                              </h3>
+                                {/* Event Title */}
+                                <h3 className="wedding-title text-lg font-bold mb-2 text-center">
+                                  {event.title}
+                                </h3>
 
-                              {/* Event Description */}
-                              <p className="wedding-text text-sm leading-relaxed opacity-80 text-center">
-                                {event.description}
-                              </p>
-                            </button>
+                                {/* Event Description */}
+                                <p className="wedding-text text-sm leading-relaxed opacity-80 text-center">
+                                  {event.description}
+                                </p>
+                              </button>
+                            ) : (
+                              <div className="w-full bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border-2 border-[#841811]/20 opacity-75">
+                                {/* Event Date */}
+                                {event.date && (
+                                  <div className="mb-3 text-center">
+                                    <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
+                                      {event.date}
+                                    </span>
+                                  </div>
+                                )}
+
+                                {/* Event Title */}
+                                <h3 className="wedding-title text-lg font-bold mb-2 text-center">
+                                  {event.title}
+                                </h3>
+
+                                {/* Event Description */}
+                                <p className="wedding-text text-sm leading-relaxed opacity-80 text-center">
+                                  {event.description}
+                                </p>
+                              </div>
+                            )}
                           </div>
                         </div>
 
@@ -168,13 +189,13 @@ export default function OnsVerhaalPage() {
                                 isLeft ? 'pr-4 text-right' : 'pl-4 text-left'
                               }`}
                             >
-                              <button
-                                type="button"
-                                onClick={() => openLightbox(event)}
-                                className="w-full bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg border-2 border-[#841811]/20 hover:border-[#841811]/40 transition-all duration-300 cursor-pointer hover:shadow-xl"
-                              >
-                                {/* Event Image */}
-                                {event.image && (
+                              {event.image ? (
+                                <button
+                                  type="button"
+                                  onClick={() => openLightbox(event)}
+                                  className="w-full bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg border-2 border-[#841811]/20 hover:border-[#841811]/40 transition-all duration-300 cursor-pointer hover:shadow-xl"
+                                >
+                                  {/* Event Image */}
                                   <div className="mb-4 relative h-48 rounded-lg overflow-hidden bg-[#841811]/10">
                                     <Image
                                       src={event.image}
@@ -184,25 +205,48 @@ export default function OnsVerhaalPage() {
                                       sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                   </div>
-                                )}
 
-                                {/* Event Date */}
-                                <div className="mb-2">
-                                  <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
-                                    {event.date}
-                                  </span>
+                                  {/* Event Date */}
+                                  {event.date && (
+                                    <div className="mb-2">
+                                      <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
+                                        {event.date}
+                                      </span>
+                                    </div>
+                                  )}
+
+                                  {/* Event Title */}
+                                  <h3 className="wedding-title text-xl font-bold mb-3">
+                                    {event.title}
+                                  </h3>
+
+                                  {/* Event Description */}
+                                  <p className="wedding-text text-sm leading-relaxed opacity-80">
+                                    {event.description}
+                                  </p>
+                                </button>
+                              ) : (
+                                <div className="w-full bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg border-2 border-[#841811]/20 opacity-75">
+                                  {/* Event Date */}
+                                  {event.date && (
+                                    <div className="mb-2">
+                                      <span className="inline-block px-3 py-1 bg-[#841811]/10 text-[#841811] rounded-full text-sm font-semibold">
+                                        {event.date}
+                                      </span>
+                                    </div>
+                                  )}
+
+                                  {/* Event Title */}
+                                  <h3 className="wedding-title text-xl font-bold mb-3">
+                                    {event.title}
+                                  </h3>
+
+                                  {/* Event Description */}
+                                  <p className="wedding-text text-sm leading-relaxed opacity-80">
+                                    {event.description}
+                                  </p>
                                 </div>
-
-                                {/* Event Title */}
-                                <h3 className="wedding-title text-xl font-bold mb-3">
-                                  {event.title}
-                                </h3>
-
-                                {/* Event Description */}
-                                <p className="wedding-text text-sm leading-relaxed opacity-80">
-                                  {event.description}
-                                </p>
-                              </button>
+                              )}
                             </div>
                           </div>
                         </div>
