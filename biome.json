@@ -10,7 +10,7 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
-      "jsxQuoteStyle": "single",
+      "jsxQuoteStyle": "double",
       "trailingCommas": "es5",
       "semicolons": "always"
     }

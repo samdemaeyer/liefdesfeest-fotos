@@ -32,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
-        <link href='https://use.typekit.net/xmb5fay.css' rel='stylesheet' />
+        <link href="https://use.typekit.net/xmb5fay.css" rel="stylesheet" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -421,4 +421,30 @@ export const timelineData: YearSection[] = [
       },
     ],
   },
+  {
+    year: 'Next ...',
+    events: [
+      {
+        id: 45,
+        date: '2026??',
+        title: 'Een huis kopen samen?',
+        description:
+          'Ben en Dorina kopen een huis samen. Een nieuwe start voor hun gezin.',
+      },
+      {
+        id: 46,
+        date: '2026??',
+        title: 'Een kind kopen?',
+        description:
+          'Ben en Dorina kopen een kind. Een nieuwe start voor hun gezin.',
+      },
+      {
+        id: 47,
+        date: '2026??',
+        title: 'Een 6de kat nemen?',
+        description:
+          'Ben en Dorina nemen een 6de kat in het gezin. Een nieuwe start voor hun gezin.',
+      },
+    ],
+  },
 ];
