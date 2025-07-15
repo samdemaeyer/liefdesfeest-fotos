@@ -1,116 +1,116 @@
 @import "tailwindcss";
 
 :root {
-	--background: #faf8f5;
-	--foreground: #841811;
-	--wedding-red: #841811;
-	--wedding-cream: #faf8f5;
-	--wedding-gold: #d4af37;
-	--font-wedding: "adorn-condensed-sans", sans-serif;
+  --background: #faf8f5;
+  --foreground: #841811;
+  --wedding-red: #841811;
+  --wedding-cream: #faf8f5;
+  --wedding-gold: #d4af37;
+  --font-wedding: "adorn-condensed-sans", sans-serif;
 }
 
 @theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--color-wedding-red: var(--wedding-red);
-	--color-wedding-cream: var(--wedding-cream);
-	--color-wedding-gold: var(--wedding-gold);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-	--font-wedding: var(--font-wedding);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-wedding-red: var(--wedding-red);
+  --color-wedding-cream: var(--wedding-cream);
+  --color-wedding-gold: var(--wedding-gold);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-wedding: var(--font-wedding);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--background: #faf8f5;
-		--foreground: #841811;
-	}
+  :root {
+    --background: #faf8f5;
+    --foreground: #841811;
+  }
 }
 
 body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: var(--font-wedding);
-	line-height: 1.6;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-wedding);
+  line-height: 1.6;
 }
 
 /* Wedding theme classes */
 .wedding-title {
-	font-family: var(--font-wedding);
-	color: var(--wedding-red);
-	font-weight: 600;
-	text-shadow: 2px 2px 4px rgba(132, 24, 17, 0.1);
+  font-family: var(--font-wedding);
+  color: var(--wedding-red);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(132, 24, 17, 0.1);
 }
 
 .wedding-text {
-	font-family: var(--font-wedding);
-	color: var(--wedding-red);
+  font-family: var(--font-wedding);
+  color: var(--wedding-red);
 }
 
 .wedding-bg {
-	background: linear-gradient(135deg, var(--wedding-cream) 0%, #f5f1eb 100%);
+  background: linear-gradient(135deg, var(--wedding-cream) 0%, #f5f1eb 100%);
 }
 
 .decorative-border {
-	position: relative;
+  position: relative;
 }
 
 .decorative-border::before,
 .decorative-border::after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 200px;
-	height: 3px;
-	background: linear-gradient(
-		90deg,
-		transparent,
-		var(--wedding-red),
-		transparent
-	);
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--wedding-red),
+    transparent
+  );
 }
 
 .decorative-border::before {
-	top: -10px;
+  top: -10px;
 }
 
 .decorative-border::after {
-	bottom: -10px;
+  bottom: -10px;
 }
 
 /* Heart animation */
 @keyframes heartbeat {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .heart-animation {
-	animation: heartbeat 2s ease-in-out infinite;
+  animation: heartbeat 2s ease-in-out infinite;
 }
 
 /* Romantic patterns */
 .wedding-pattern {
-	background-image:
-		radial-gradient(
-			circle at 20% 50%,
-			rgba(132, 24, 17, 0.05) 2px,
-			transparent 2px
-		),
-		radial-gradient(
-			circle at 80% 50%,
-			rgba(132, 24, 17, 0.05) 2px,
-			transparent 2px
-		);
-	background-size: 40px 40px;
-	background-position:
-		0 0,
-		20px 20px;
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(132, 24, 17, 0.05) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(132, 24, 17, 0.05) 2px,
+      transparent 2px
+    );
+  background-size: 40px 40px;
+  background-position:
+    0 0,
+    20px 20px;
 }

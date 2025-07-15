@@ -58,11 +58,7 @@ Create an IAM user with the following policy:
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": [
-        "s3:PutObject",
-        "s3:GetObject",
-        "s3:DeleteObject"
-      ],
+      "Action": ["s3:PutObject", "s3:GetObject", "s3:DeleteObject"],
       "Resource": "arn:aws:s3:::your-bucket-name/*"
     }
   ]
@@ -138,6 +134,7 @@ This Next.js app can be deployed to any platform that supports Node.js:
 Generates a pre-signed URL for S3 upload.
 
 **Request Body:**
+
 ```json
 {
   "filename": "photo.jpg",
@@ -146,6 +143,7 @@ Generates a pre-signed URL for S3 upload.
 ```
 
 **Response:**
+
 ```json
 {
   "uploadUrl": "https://your-bucket.s3.amazonaws.com/...",
@@ -194,7 +192,7 @@ Add console logs to the API routes for debugging:
 console.log('Environment check:', {
   bucket: process.env.AWS_S3_BUCKET_NAME,
   region: process.env.AWS_REGION,
-  hasAccessKey: !!process.env.AWS_ACCESS_KEY_ID
+  hasAccessKey: !!process.env.AWS_ACCESS_KEY_ID,
 });
 ```
 

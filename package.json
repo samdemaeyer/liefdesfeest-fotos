@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "biome format --write src/",
+    "format:check": "biome format src/",
+    "lint:biome": "biome lint ."
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.842.0",
@@ -19,6 +22,7 @@
     "react-dropzone": "^14.3.8"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
@@ -26,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
