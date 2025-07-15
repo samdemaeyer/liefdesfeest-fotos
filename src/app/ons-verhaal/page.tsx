@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import FadeInView from '@/components/FadeInView';
+import FloatingNav from '@/components/FloatingNav';
 import TimelineLightbox from '@/components/TimelineLightbox';
 import WeddingHeader from '@/components/WeddingHeader';
 import { type TimelineEvent, timelineData } from '@/data/timeline';
@@ -25,6 +26,9 @@ export default function OnsVerhaalPage() {
 
   return (
     <div className="min-h-screen wedding-bg wedding-pattern">
+      {/* Floating Navigation */}
+      <FloatingNav currentPage="timeline" />
+
       {/* Wedding Header */}
       <WeddingHeader>
         <h2 className="wedding-text  decorative-border mt-8 mb-8">
@@ -71,7 +75,7 @@ export default function OnsVerhaalPage() {
                     </div>
                   </FadeInView>
 
-                  {/* Events for this year */}
+                  {/* Year Events */}
                   {yearSection.events.map((event, localIndex) => {
                     const globalIndex = eventIndex + localIndex;
                     const isLeft = globalIndex % 2 === 0;
