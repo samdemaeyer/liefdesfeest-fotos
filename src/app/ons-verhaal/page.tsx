@@ -28,7 +28,6 @@ export default function OnsVerhaalPage() {
     <div className="min-h-screen wedding-bg wedding-pattern">
       {/* Floating Navigation */}
       <FloatingNav currentPage="timeline" />
-
       {/* Wedding Header */}
       <WeddingHeader>
         <h2 className="wedding-text  decorative-border mt-8 mb-8">
@@ -41,7 +40,6 @@ export default function OnsVerhaalPage() {
           Ze hebben al heel wat meegemaakt en vertellen hieronder hun verhaal.
         </p>
       </WeddingHeader>
-
       {/* Timeline Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="relative pt-12 pb-12">
@@ -282,13 +280,39 @@ export default function OnsVerhaalPage() {
           duration={700}
           threshold={0.2}
         >
-          <div className="text-center mt-12 md:mt-16">
-            <div className="inline-block text-5xl md:text-6xl text-[#841811] opacity-60">
-              💕
-            </div>
-            <p className="wedding-text text-base md:text-lg mt-3 md:mt-4 italic px-4">
-              En ze leefden nog lang en gelukkig...
-            </p>
+          <div
+            className="strawpoll-embed"
+            id="strawpoll_NMnQNvAOAg6"
+            style={{
+              height: '672px',
+              maxWidth: '640px',
+              width: '100%',
+              margin: '0 auto',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <iframe
+              title="StrawPoll Embed"
+              id="strawpoll_iframe_NMnQNvAOAg6"
+              src="https://strawpoll.com/embed/NMnQNvAOAg6"
+              style={{
+                position: 'static',
+                visibility: 'visible',
+                display: 'block',
+                width: '100%',
+                flexGrow: 1,
+              }}
+              frameBorder="0"
+              allowFullScreen
+            >
+              Loading...
+            </iframe>
+            <script
+              async
+              src="https://cdn.strawpoll.com/dist/widgets.js"
+              charSet="utf-8"
+            ></script>
           </div>
         </FadeInView>
       </div>
