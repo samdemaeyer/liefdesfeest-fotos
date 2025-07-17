@@ -1,13 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import Image from 'next/image';
-import type { UploadedFile } from '@/types';
-import { formatFileSize, validateImageFile } from '@/lib/utils';
+import FloatingNav from '@/components/FloatingNav';
 import PhotoGrid from '@/components/PhotoGrid';
-import { useIsMobile } from '@/hooks/useIsMobile';
 import WeddingHeader from '@/components/WeddingHeader';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { formatFileSize, validateImageFile } from '@/lib/utils';
+import type { UploadedFile } from '@/types';
 
 export default function HomePage() {
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
@@ -128,6 +129,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen wedding-bg wedding-pattern">
+      {/* Floating Navigation */}
+      <FloatingNav currentPage="home" />
+
       {/* Wedding Header */}
       <WeddingHeader />
 

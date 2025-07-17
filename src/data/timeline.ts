@@ -35,7 +35,7 @@ export const timelineData: YearSection[] = [
         date: 'September 2015',
         title: 'Eerste keer samen naar de Kermis',
         description:
-          'Ben en Dorina gaan samen naar de Kermis in Kiewit. Ze hebben een prachtige tijd en hebben veel plezier.',
+          'Ben en Dorina gaan samen naar de Kermis in Hasselt. Ze hebben een prachtige tijd en hebben veel plezier.',
         image: '/ons-verhaal/ons-verhaal-2.webp',
       },
       {
@@ -52,18 +52,11 @@ export const timelineData: YearSection[] = [
     year: '2016',
     events: [
       {
-        id: 5,
-        title: 'Een “normale foto”',
-        description:
-          'Ben en Dorina hebben een “normale foto” gemaakt. Dit is een foto waar ze zelf niet eens in staan.',
-        image: '/ons-verhaal/ons-verhaal-4.webp',
-      },
-      {
         id: 6,
         date: 'April 2016',
         title: 'Eerste Paashaasparty samen',
         description:
-          'Ben en Dorina hebben hun eerste Paashaasparty samen gehad. Ze hebben een prachtige tijd en hebben veel plezier.',
+          'Ben en Dorina hebben hun eerste Paashaasparty van Ben zijn scouts samen gehad.',
         image: '/ons-verhaal/ons-verhaal-5.webp',
       },
       {
@@ -77,9 +70,9 @@ export const timelineData: YearSection[] = [
       {
         id: 8,
         date: 'Juni 2016',
-        title: 'Hun eerste echte reis samen naar Kroatië',
+        title: 'Hun eerste echte grote vakantie samen naar Kroatië',
         description:
-          'Ben en Dorina gaan samen naar Kroatië voor hun eerste echte reis samen.',
+          'Ben en Dorina gaan samen naar Kroatië voor hun eerste echte vakantie samen.',
         image: '/ons-verhaal/ons-verhaal-7.webp',
       },
       {
@@ -93,8 +86,7 @@ export const timelineData: YearSection[] = [
       {
         id: 10,
         title: 'Via Snapchat leerden ze elkaar steeds beter kennen',
-        description:
-          'Via Snapchat leerden ze elkaar steeds beter kennen, daar horen natuurlijk ook filters bij.',
+        description: 'Daar horen natuurlijk ook filters bij.',
         image: '/ons-verhaal/ons-verhaal-9.webp',
       },
     ],
@@ -105,37 +97,32 @@ export const timelineData: YearSection[] = [
       {
         id: 11,
         title: 'Hun gezamenlijke liefde voor katten komt op',
-        description:
-          'Ben en Dorina hebben een gezamenlijke liefde voor katten gevonden. Ze hebben een prachtige tijd en hebben veel plezier.',
+        description: '',
         image: '/ons-verhaal/ons-verhaal-10.webp',
       },
       {
         id: 12,
-        title: 'Nieuwe traditie: jaarlijks de Paashaasparty onveilig maken',
-        description:
-          'Ben en Dorina hebben een nieuwe traditie opgezet: jaarlijks de Paashaasparty onveilig maken.',
+        title: 'Nieuwe traditie',
+        description: 'Jaarlijks de Paashaasparty onveilig maken.',
         image: '/ons-verhaal/ons-verhaal-11.webp',
       },
       {
         id: 13,
-        title: 'Echte koppels dragen Matching zonnebrillen',
-        description:
-          'Ben en Dorina dragen voor het eerst Matching zonnebrillen. Ze hebben een prachtige tijd en hebben veel plezier.',
+        title: 'Matching zonnebrillen',
+        description: '',
         image: '/ons-verhaal/ons-verhaal-12.webp',
       },
       {
         id: 14,
-        title: 'Opnieuw naar Londen en dit keer bezoeken ze ook Brighton',
-        description:
-          'Ben en Dorina gaan opnieuw naar Londen en dit keer bezoeken ze ook Brighton.',
+        title: 'Opnieuw naar Londen',
+        description: 'En dit keer bezoeken ze ook Brighton.',
         image: '/ons-verhaal/ons-verhaal-13.webp',
       },
       {
         id: 15,
         date: 'Augustus 2017',
-        title: 'Samen naar Pukkelpop',
-        description:
-          'Ben en Dorina gaan samen naar Pukkelpop voor hun eerste echte reis samen.',
+        title: 'Pukkelpop',
+        description: 'Zo leuk!',
         image: '/ons-verhaal/ons-verhaal-14.webp',
       },
     ],
@@ -146,8 +133,7 @@ export const timelineData: YearSection[] = [
       {
         id: 16,
         title: 'Matching zonnebrillen 2.0',
-        description:
-          'Ben en Dorina dragen voor het tweede jaar op een rij Matching zonnebrillen. Ze hebben een prachtige tijd en hebben veel plezier.',
+        description: '',
         image: '/ons-verhaal/ons-verhaal-15.webp',
       },
 
@@ -156,23 +142,22 @@ export const timelineData: YearSection[] = [
         date: 'Juli 2018',
         title: 'Lollapalooza Parijs',
         description:
-          'Een onvergetelijke reis naar Parijs voor Lollapalooza, gevolgd door een romantische trip naar Portugal.',
+          'Een onvergetelijke reis naar Parijs voor Lollapalooza samen met Kobe, Ghislaine en Sam.',
         image: '/ons-verhaal/ons-verhaal-16.webp',
       },
       {
         id: 18,
         date: 'Juli 2018',
-        title: 'Na Parijs gingen we onder ons 2 door naar Portugal',
+        title: 'Op het nippertje naar Portugal',
         description:
-          'Ben en Dorina gaan naar Parijs voor Lollapalooza, gevolgd door een romantische trip naar Portugal.',
+          'Dorina werd flink ziek na Parijs, waardoor ze bijna het vliegtuig naar Portugal niet op mocht. Ben heeft goed voor haar gezorgd en zijn ze er toch geraakt.',
         image: '/ons-verhaal/ons-verhaal-18.webp',
       },
       {
         id: 19,
         date: 'Augustus 2018',
-        title: 'Samen naar Pukkelpop',
-        description:
-          'Ben en Dorina gaan samen naar Pukkelpop voor hun eerste echte reis samen.',
+        title: 'Pukkelpop',
+        description: 'Wat leuk!',
         image: '/ons-verhaal/ons-verhaal-19.webp',
       },
       {
@@ -191,15 +176,14 @@ export const timelineData: YearSection[] = [
       {
         id: 21,
         date: 'Augustus 2019',
-        title: 'Samen naar Pukkelpop',
-        description:
-          'Ben en Dorina gaan samen naar Pukkelpop voor hun eerste echte reis samen.',
+        title: 'Pukkelpop',
+        description: 'Dag 4, vermoeiend maar tof!',
         image: '/ons-verhaal/ons-verhaal-22.webp',
       },
       {
         id: 22,
         date: 'September 2019',
-        title: 'Ons eerste huisdier samen, Maurice',
+        title: 'Maurice',
         description:
           'Hun eerste huisdier samen! Maurice wordt een belangrijk onderdeel van hun gezin.',
         image: '/ons-verhaal/ons-verhaal-23.webp',
@@ -207,9 +191,8 @@ export const timelineData: YearSection[] = [
       {
         id: 23,
         date: 'December 2019',
-        title: 'Laatste dag van het jaar, de trouw van Sam & Evelien',
-        description:
-          'Ben en Dorina hebben de trouw van Sam & Evelien bijgewoond. Een prachtige dag om samen te vieren.',
+        title: 'Trouw van Sam en Evelien',
+        description: 'Het laatste feestje voor de lockdown.',
         image: '/ons-verhaal/ons-verhaal-24.webp',
       },
     ],
@@ -220,26 +203,24 @@ export const timelineData: YearSection[] = [
       {
         id: 24,
         date: 'Maart 2020',
-        title: 'COVID & Samenwonen',
+        title: 'Samenhokken!',
         description:
-          'Toen COVID uitbrak, pakte Dorina een koffer in en ging bij Ben wonen. Een bijzondere start van hun samenwonen!',
+          'Toen COVID uitbrak, pakte Dorina haar koffers in en trok bij Ben in. Een bijzondere start van hun samenwonen!',
         image: '/ons-verhaal/ons-verhaal-25.webp',
       },
       {
         id: 25,
         date: 'Mei 2020',
-        title:
-          'Eentje is eentje. Oscar komt in het gezin, de nieuwe beste vriend van Maurice',
+        title: 'Eentje is geentje.',
         description:
-          'Ben en Dorina krijgen een nieuwe beste vriend in het gezin, Oscar. Hij is de nieuwe beste vriend van Maurice.',
+          'Ben en Dorina nemen nog een kat, Oscar. Hij is de nieuwe beste vriend van Maurice.',
         image: '/ons-verhaal/ons-verhaal-26.webp',
       },
       {
         id: 26,
         date: 'Augustus 2020',
-        title: 'Pukkelpop kan jammer genoeg niet doorgaan dit jaar.',
-        description:
-          'Pukkelpop kan jammer genoeg niet doorgaan dit jaar. Ben en Dorina moeten thuis blijven.',
+        title: 'Pukkelpop',
+        description: 'Covid editie, ook leuk maar toch anders.',
         image: '/ons-verhaal/ons-verhaal-27.webp',
       },
       {
@@ -253,10 +234,9 @@ export const timelineData: YearSection[] = [
       {
         id: 28,
         date: 'November 2020',
-        title:
-          'De officiële verhuis! Alle laatste spullen in de auto geladen waaronder de 2 belangrijkste zaken: Oscar en Maurice.',
+        title: 'De officiële verhuis!',
         description:
-          'Ben en Dorina verhuizen naar Kiewit en krijgen een nieuw huis. Ze hebben een prachtige tijd en hebben veel plezier.',
+          'Alle laatste spullen in de auto geladen waaronder de 2 belangrijkste zaken: Oscar en Maurice.',
         image: '/ons-verhaal/ons-verhaal-29.webp',
       },
     ],
@@ -267,7 +247,7 @@ export const timelineData: YearSection[] = [
       {
         id: 29,
         date: 'April 2021',
-        title: 'Minoushe Krijgt Nieuw Thuis',
+        title: 'Welkom Minoushe',
         description:
           'Toen Minoushe haar baasje verloor, gaven Ben en Dorina haar een liefdevol nieuw thuis.',
         image: '/ons-verhaal/ons-verhaal-30.webp',
@@ -275,9 +255,8 @@ export const timelineData: YearSection[] = [
       {
         id: 30,
         date: 'September 2021',
-        title: 'Eerste reis na de pandemie naar Kroatië',
-        description:
-          'Ben en Dorina gaan naar Kroatië voor hun eerste reis na de pandemie.',
+        title: 'Eerste reis na de pandemie',
+        description: 'Hop naar Kroatië!',
         image: '/ons-verhaal/ons-verhaal-31.webp',
       },
     ],
@@ -289,16 +268,14 @@ export const timelineData: YearSection[] = [
         id: 31,
         date: 'Augustus 2022',
         title: 'Pukkelpop mag weer doorgaan!',
-        description:
-          'Ben en Dorina gaan naar Pukkelpop voor hun eerste echte reis na de pandemie.',
+        description: 'Hey Muriël!',
         image: '/ons-verhaal/ons-verhaal-32.webp',
       },
       {
         id: 32,
-        date: 'Augustus 2022',
-        title: 'Pukkelpop mag weer doorgaan!',
-        description:
-          'Ben en Dorina gaan naar Pukkelpop voor hun eerste echte reis na de pandemie.',
+        date: 'September 2022',
+        title: 'Joepie reizen!',
+        description: 'Kroatië heeft ons hart gestolen, dus we gaan terug!',
         image: '/ons-verhaal/ons-verhaal-33.webp',
       },
       {
@@ -317,25 +294,23 @@ export const timelineData: YearSection[] = [
       {
         id: 34,
         date: 'Juni 2023',
-        title: 'Samen op vakantie naar Londen',
+        title: 'London',
         description:
-          'Ben en Dorina gaan op vakantie naar Londen voor hun eerste echte reis na de pandemie.',
+          'Sam Kira en Hugo bezoeken, op de terugweg nog even langs de Botanische tuin.',
         image: '/ons-verhaal/ons-verhaal-36.webp',
       },
       {
         id: 35,
         date: 'Augustus 2023',
-        title: 'Samen naar Pukkelpop',
-        description:
-          'Ben en Dorina gaan naar Pukkelpop voor hun eerste echte reis na de pandemie.',
+        title: 'Pukkelpop',
+        description: 'Een hete editie, maar zo leuk!',
         image: '/ons-verhaal/ons-verhaal-38.webp',
       },
       {
         id: 36,
         date: 'September 2023',
-        title: 'Nog meer verbouwingen. Dit keer is de badkamer aan de beurt.',
-        description:
-          'Ben en Dorina verbouwen de badkamer en maken het huis nog gezelliger.',
+        title: 'Nog meer verbouwingen.',
+        description: 'Dit zijn de badkamer en de ramen aan de beurt.',
         image: '/ons-verhaal/ons-verhaal-39.webp',
       },
       {
@@ -343,15 +318,14 @@ export const timelineData: YearSection[] = [
         date: 'September 2023',
         title: 'Cleo Gevonden',
         description:
-          'Tijdens verbouwingen vonden ze een katje op de parking van de Corda Campus. Cleo mag blijven!',
+          "Tijdens de verbouwingen vond Ben's Collega Christiaan een katje op de parking van de Corda Campus. Cleo mag blijven!",
         image: '/ons-verhaal/ons-verhaal-40.webp',
       },
       {
         id: 38,
         date: 'Oktober 2023',
-        title: 'Citytrip naar Berlijn',
-        description:
-          'Ben en Dorina gaan naar Berlijn voor hun eerste echte reis na de pandemie.',
+        title: 'Berlijn',
+        description: 'Ben was hier nog nooit geweest.',
         image: '/ons-verhaal/ons-verhaal-41.webp',
       },
     ],
@@ -362,17 +336,16 @@ export const timelineData: YearSection[] = [
       {
         id: 39,
         date: 'Januari 2024',
-        title: 'Familie kiekje, iedereen samen op 1 foto',
+        title: 'Familie kiekje',
         description:
-          'Ben en Dorina hebben een familie kiekje gemaakt, iedereen samen op 1 foto.',
+          'Niet gemakkelijk allemaal samen op de foto! Lang leve photoshop.',
         image: '/ons-verhaal/ons-verhaal-42.webp',
       },
       {
         id: 40,
         date: 'Juli 2024',
-        title: 'Op reis naar Frankrijk en Spanje',
-        description:
-          'Ben en Dorina gaan op reis naar Frankrijk en Spanje voor hun eerste echte reis na de pandemie.',
+        title: 'Vakantie!',
+        description: 'Roadtripje naar Frankijk en Spanje!',
         image: '/ons-verhaal/ons-verhaal-43.webp',
       },
       {
@@ -380,15 +353,14 @@ export const timelineData: YearSection[] = [
         date: 'Augustus 2024',
         title: 'Baby Lucien',
         description:
-          'Jens en Katlijn vonden een kitten in hun tuin, maar konden hem niet houden. Baby Lucien komt bij hen wonen.',
+          'Jens en Katlijn vonden een kitten op Lucie haar verjaardag, maar konden hem niet houden. Baby Lucien werd mee opgenomen in de familie.',
         image: '/ons-verhaal/ons-verhaal-44.webp',
       },
       {
         id: 42,
         date: 'Augustus 2024',
         title: 'Pukkelpop blijft een jaarlijkse traditie',
-        description:
-          'Ben en Dorina gaan naar Pukkelpop voor hun eerste echte reis na de pandemie.',
+        description: 'Wat een editie! We kijken al uit naar volgend jaar!',
         image: '/ons-verhaal/ons-verhaal-45.webp',
       },
       {
@@ -411,29 +383,6 @@ export const timelineData: YearSection[] = [
         description:
           '10 jaar samen = liefdesfeest! De dag waarop Ben en Dorina hun liefde vieren met iedereen die hen dierbaar is.',
         image: '/ons-verhaal/ons-verhaal-49.webp',
-      },
-    ],
-  },
-  {
-    year: 'Next ...',
-    events: [
-      {
-        id: 45,
-        title: 'Een huis kopen samen?',
-        description:
-          'Ben en Dorina kopen een huis samen. Een nieuwe start voor hun gezin.',
-      },
-      {
-        id: 46,
-        title: 'Een kind kopen?',
-        description:
-          'Ben en Dorina kopen een kind. Een nieuwe start voor hun gezin.',
-      },
-      {
-        id: 47,
-        title: 'Een 6de kat nemen?',
-        description:
-          'Ben en Dorina nemen een 6de kat in het gezin. Een nieuwe start voor hun gezin.',
       },
     ],
   },

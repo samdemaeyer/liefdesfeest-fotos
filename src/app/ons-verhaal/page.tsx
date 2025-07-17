@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import FadeInView from '@/components/FadeInView';
+import FloatingNav from '@/components/FloatingNav';
 import TimelineLightbox from '@/components/TimelineLightbox';
 import WeddingHeader from '@/components/WeddingHeader';
 import { type TimelineEvent, timelineData } from '@/data/timeline';
@@ -25,13 +26,20 @@ export default function OnsVerhaalPage() {
 
   return (
     <div className="min-h-screen wedding-bg wedding-pattern">
+      {/* Floating Navigation */}
+      <FloatingNav currentPage="timeline" />
       {/* Wedding Header */}
       <WeddingHeader>
-        <h2 className="wedding-text text-2xl md:text-3xl font-semibold decorative-border mt-8">
-          Ons Verhaal
+        <h2 className="wedding-text  decorative-border mt-8 mb-8">
+          <span className="text-2xl md:text-3xl font-semibold">
+            Ons Verhaal!
+          </span>
         </h2>
+        <p>
+          Vandaag zijn ze 10 jaar samen! <br />
+          Ze hebben al heel wat meegemaakt en vertellen hieronder hun verhaal.
+        </p>
       </WeddingHeader>
-
       {/* Timeline Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="relative pt-12 pb-12">
@@ -65,7 +73,7 @@ export default function OnsVerhaalPage() {
                     </div>
                   </FadeInView>
 
-                  {/* Events for this year */}
+                  {/* Year Events */}
                   {yearSection.events.map((event, localIndex) => {
                     const globalIndex = eventIndex + localIndex;
                     const isLeft = globalIndex % 2 === 0;
@@ -272,13 +280,39 @@ export default function OnsVerhaalPage() {
           duration={700}
           threshold={0.2}
         >
-          <div className="text-center mt-12 md:mt-16">
-            <div className="inline-block text-5xl md:text-6xl text-[#841811] opacity-60">
-              💕
-            </div>
-            <p className="wedding-text text-base md:text-lg mt-3 md:mt-4 italic px-4">
-              En ze leefden nog lang en gelukkig...
-            </p>
+          <div
+            className="strawpoll-embed"
+            id="strawpoll_NMnQNvAOAg6"
+            style={{
+              height: '672px',
+              maxWidth: '640px',
+              width: '100%',
+              margin: '0 auto',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <iframe
+              title="StrawPoll Embed"
+              id="strawpoll_iframe_NMnQNvAOAg6"
+              src="https://strawpoll.com/embed/NMnQNvAOAg6"
+              style={{
+                position: 'static',
+                visibility: 'visible',
+                display: 'block',
+                width: '100%',
+                flexGrow: 1,
+              }}
+              frameBorder="0"
+              allowFullScreen
+            >
+              Loading...
+            </iframe>
+            <script
+              async
+              src="https://cdn.strawpoll.com/dist/widgets.js"
+              charSet="utf-8"
+            ></script>
           </div>
         </FadeInView>
       </div>
