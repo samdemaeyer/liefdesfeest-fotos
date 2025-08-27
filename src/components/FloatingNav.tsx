@@ -23,7 +23,7 @@ export default function FloatingNav({ currentPage }: FloatingNavProps) {
 
       {/* Photobooth link */}
       <a
-        href="https://lightroom.adobe.com/shares/c96ac8a3186b40c7b97500c09d9a7f87"
+        href="https://photos.app.goo.gl/4nMiNUa236rQ5R269"
         target="_blank"
         rel="noopener noreferrer"
         className={linkClassName}
