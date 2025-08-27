@@ -40,7 +40,7 @@ export default function FloatingNav({ currentPage }: FloatingNavProps) {
         rel="noopener noreferrer"
         className={linkClassName}
       >
-        <span className="text-sm">📷</span>
+        <span className="text-sm">📸</span>
         <span className="text-xs font-medium whitespace-nowrap">
           Fotograaf
         </span>
