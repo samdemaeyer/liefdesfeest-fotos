@@ -33,6 +33,18 @@ export default function FloatingNav({ currentPage }: FloatingNavProps) {
           Photobooth
         </span>
       </a>
+      {/* Photographer link */}
+      <a
+        href="https://lunarighetti.pixieset.com/dorinaandbenswedding/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClassName}
+      >
+        <span className="text-sm">📷</span>
+        <span className="text-xs font-medium whitespace-nowrap">
+          Fotograaf
+        </span>
+      </a>
 
       {/* Poll link */}
       <a
